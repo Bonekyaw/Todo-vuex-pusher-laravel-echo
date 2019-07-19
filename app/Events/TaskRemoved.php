@@ -34,7 +34,7 @@ class TaskRemoved implements ShouldBroadcastNow
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('taskRemoved');
+        return new Channel('taskRemoved');
     }
     public function broadcastAs()
     {

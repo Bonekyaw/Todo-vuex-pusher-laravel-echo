@@ -34,7 +34,7 @@ class TaskCreated implements ShouldBroadcastNow
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('newTask');
+        return new Channel('newTask');
     }
     //customizes the broadcast name
     public function broadcastAs()
